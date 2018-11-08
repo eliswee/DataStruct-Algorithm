@@ -22,5 +22,10 @@ typedef enum Status{
     OK
 } Status;
 
+// 有序数组
+int sortedData[] ={ 1, 3, 6, 8, 10, 22, 23, 50 ,70, 99, 120, 240, 350 };
+
+// 无序数组
+int unsortedData[] = {22, 33, 11, 00, 99, 123, 321, 874, 1, 5, 3, 9999, 233, 44, 22 , 1 , 987, 120};
 
 #endif /* CommonDefine_h */

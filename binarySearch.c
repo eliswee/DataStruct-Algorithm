@@ -9,8 +9,7 @@
 // 二分查找
 
 #include <stdio.h>
-
-int data[] ={ 1, 3, 6, 8, 10, 22, 23, 50 ,70, 99, 120, 240, 350 };
+#include "CommonDefine.h"
 
 int binarySearch(int *array, int length, int target) {
     
@@ -28,12 +27,12 @@ int binarySearch(int *array, int length, int target) {
     return -1;
 }
 
-int main(int argc, const char * argv[]) {
-    
-    int length = sizeof(data)/sizeof(int);
-    
-    int target = 50;
-    
-    int index = binarySearch(data, length, target);
-    printf("target = %d, findIndex: %d : value:%d\n", target, index, index!=-1?data[index]:-1);
-}
+//int main(int argc, const char * argv[]) {
+//    
+//    int length = sizeof(sortedData)/sizeof(int);
+//    
+//    int target = 50;
+//    
+//    int index = binarySearch(sortedData, length, target);
+//    printf("target = %d, findIndex: %d : value:%d\n", target, index, index!=-1?sortedData[index]:-1);
+//}

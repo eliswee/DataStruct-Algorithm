@@ -22,23 +22,22 @@ typedef struct Line {
 }Line;
 
 
-// 查询线性表
-// 参数 ： 表  序号  数据接收
+//// 查询线性表
+//// 参数 ： 表  序号  数据接收
 //Status GetElem(Line *line, int index, DataType *data) {
 //    
 //}
-
-// 创建线性表
+//
+//// 创建线性表
 //Line * CreateLine() {
 //    
 //    Line *line = (Line *)malloc(sizeof(Line));
-//    
-//    line->data =
+//    line->length = 0;
 //    
 //    return line;
 //}
-
-
+//
+//
 //int main (int argc, char *argv []) {
 //    
 //    Line *line = CreateLine();
