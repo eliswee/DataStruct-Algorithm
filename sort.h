@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+// 冒泡排序
+void popSort (int count, int *arr);
+
+// 选择排序
+void selectSort(int arr[], int length);
+
+
 #endif /* sort_h */

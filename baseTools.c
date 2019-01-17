@@ -1,16 +1,27 @@
 //
-//  binarySearch.c
+//  baseTools.c
 //  cT
 //
-//  Created by zfz on 2018/11/7.
+//  Created by zfz on 2018/11/16.
 //  Copyright © 2018 zfz. All rights reserved.
 //
 
+#include "baseTools.h"
+
+void swap(int *a, int *b) {
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void printArr(int arr[], int len) {
+    for (int i = 0; i < len; i++) {
+        printf("%d\n", arr[i]);
+    }
+}
+
 // 二分查找
-
-#include <stdio.h>
-#include "CommonDefine.h"
-
 int binarySearch(int *array, int length, int target) {
     
     int mid = 0, low = 0, high = length-1;
@@ -26,13 +37,3 @@ int binarySearch(int *array, int length, int target) {
     }
     return -1;
 }
-
-//int main(int argc, const char * argv[]) {
-//    
-//    int length = sizeof(sortedData)/sizeof(int);
-//    
-//    int target = 50;
-//    
-//    int index = binarySearch(sortedData, length, target);
-//    printf("target = %d, findIndex: %d : value:%d\n", target, index, index!=-1?sortedData[index]:-1);
-//}
